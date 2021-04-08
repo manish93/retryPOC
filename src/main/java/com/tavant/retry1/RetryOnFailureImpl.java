@@ -16,6 +16,7 @@ public class RetryOnFailureImpl implements RetryOnFailure {
 
         try {
             list2.add(list.get(0));
+
             list.get(10);
         } catch (Exception e) {
             list2.add(list.get(0));
