@@ -22,7 +22,7 @@ public class RetryController {
         try {
             retryOnFailure.retryOnException(list, new ArrayList<Integer>());
         } catch (Exception e) {
-            System.out.print("ssup");
+            System.out.print("What's Up");
             e.printStackTrace();
         }
 
