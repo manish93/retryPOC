@@ -22,7 +22,7 @@ public class Retry1Application {
 		SpringApplication.run(Retry1Application.class, args);
 	}
 
-	/*@Bean
+	@Bean
 	MethodInterceptor argumentChanger() {
 		RetryTemplate retryTemplate = new RetryTemplate();
 		SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy(3);
@@ -40,6 +40,6 @@ public class Retry1Application {
 				return invocation.proceed();
 			});
 		};
-	}*/
+	}
 
 }
