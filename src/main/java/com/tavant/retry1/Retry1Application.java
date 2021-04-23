@@ -22,9 +22,8 @@ public class Retry1Application {
 		SpringApplication.run(Retry1Application.class, args);
 	}
 
-	//@Bean
+	@Bean
 	MethodInterceptor argumentChanger() {
-		adfjsdf
 		RetryTemplate retryTemplate = new RetryTemplate();
 		SimpleRetryPolicy retryPolicy = new SimpleRetryPolicy(3);
 		FixedBackOffPolicy backOff = new FixedBackOffPolicy();
@@ -41,6 +40,6 @@ public class Retry1Application {
 				return invocation.proceed();
 			});
 		};
-	}//
+	}
 
 }
